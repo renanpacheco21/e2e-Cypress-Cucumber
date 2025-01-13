@@ -9,7 +9,7 @@ module.exports = defineConfig({
   e2e: {
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
-        plugins: [createEsbuildPlugin(config)],
+        plugins: [createEsbuildPlugin.default(config)],
       });
 
       on("file:preprocessor", bundler);
@@ -17,6 +17,7 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: "cypress/e2e/**/*.feature", // Localização dos arquivos .feature
+    specPattern: "cypress/e2e/**/*.feature",
+    baseUrl: "https://parabank.parasoft.com/parabank/index.htm",
   },
 });
