@@ -17,7 +17,14 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: "cypress/e2e/**/*.feature",
-    baseUrl: "https://parabank.parasoft.com/parabank/index.htm",
+    "cypress-cucumber-preprocessor": {
+      nonGlobalStepDefinitions: false,
+      stepDefinitions: "cypress/e2e/step_definitions",
+    },
+    specPattern: "cypress/e2e/features/**/*.feature",
+    supportFile: "cypress/support/e2e.js",
+    
   },
 });
+
+
