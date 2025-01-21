@@ -1,6 +1,6 @@
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps/";
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 
-Given("I'm on the login page", () => {
+Given("I am on the login page", () => {
   cy.visit("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
 });
 
@@ -11,5 +11,5 @@ When("I type a registered my email and password", () => {
 });
 
 Then("I have sucessful login", () => {
-    cy.get('.brand-image-xl')
+  cy.get(".brand-image-xl");
 });
