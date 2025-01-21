@@ -1,8 +1,19 @@
 {
+  "name": "e2e-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Projeto de automação e2e utilizando Cypress juntamente com o Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Renan Pacheco",
+  "license": "MIT",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
-    "@cucumber/cucumber": "^11.2.0",
-    "cypress": "^13.17.0"
+    "cypress": "^14.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/step_definitions"
   }
 }
