@@ -9,11 +9,12 @@
   "author": "Renan Pacheco",
   "license": "MIT",
   "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
     "cypress": "^14.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/e2e/step_definitions/login"
+    "stepDefinitions": "cypress/e2e/step_definitions/cadastro"
   }
 }
