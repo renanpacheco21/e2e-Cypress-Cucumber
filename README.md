@@ -40,14 +40,14 @@ project-root
 │
 ├── cypress
 │   ├── e2e
-│   │   ├── features
-│   │   │   ├── login.feature
-│   │   │   ├── account.feature
-│   │   │   └── ...
 │   │   ├── step_definitions
-│   │   │   ├── login.js
-│   │   │   ├── account.js
-│   │   │   └── ...
+│   │   │   ├── cadastro
+|   |   |   |   ├── cadastro.js
+│   │   │   |   └── ...
+|   |   |   └── cadastro.feature
+|   ├── fixtures
+|   |   ├── exemple.json
+│   │   └── ...
 │   └── support
 │       └── e2e.js
 ├── node_modules
@@ -82,7 +82,7 @@ project-root
 
 - [Cypress Documentation](https://docs.cypress.io/)
 - [Cucumber Documentation](https://cucumber.io/docs/)
-- [ParaBank Application](https://parabank.parasoft.com/parabank/index.htm)
+- [Buger Eats App](https://buger-eats.vercel.app/)
 
 ---
 
